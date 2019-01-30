@@ -1,0 +1,72 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="phone.css">
+        <title> This is a title</title>
+    </head>
+    <body>
+        <div class="tabHeader" id="page1">
+            <button class="tabChange" id="dialTab">Dialer</button>
+            <button class="tabChange" id="contactTab">Contact List</button>
+            <button class="tabChange" id="addTab">Add Contact</button>
+        </div>
+        <div class="pageBody" id="dialerPage">
+        
+            <h2>Dialer</h2>
+            <form>
+                <!--<label for="name">Name</label>-->
+                <input id="dialNumber" placeholder="Dialer Input">
+            </form>
+            <div class="keypad" id="dialerKeypad">
+                <button class="padNum" id="padOne">1</button>
+                <button class="padNum" id="padTwo">2</button>
+                <button class="padNum" id="padThree">3</button>
+                <button class="padNum" id="padFour">4</button>
+                <button class="padNum" id="padFive">5</button>
+                <button class="padNum" id="padSix">6</button>
+                <button class="padNum" id="padSeven">7</button>
+                <button class="padNum" id="padEight">8</button>
+                <button class="padNum" id="padNine">9</button>
+                <button class="padNum" id="padStar">*</button>
+                <button class="padNum" id="padZero">0</button>
+                <button class="padNum" id="padPound">#</button>
+                <button class="padNum" id="padDial">Dial</button>
+                <button class="padNum" id="padClear">Clear</button>
+            </div>
+        </div>
+        <div class="pageBody" id="contactPage">
+        
+            <h2>Contact List</h2>
+            <div class="contacts" id="contactPad">
+                <button class="padContact" id="contactOne">Shaun Kane</button>
+                <button class="padContact" id="contactTwo">Shaun King</button>
+                <button class="padContact" id="contactThree">Shaun Kong</button>
+                <button class="padContact" id="contactFour">Shaun Kang</button>
+                <button class="padContact" id="contactFive">Shaun Shaun PoShaun</button>
+                <button class="padContact" id="contactSix">Shaun Kerry</button>
+                <button class="padContact" id="contactSeven">Shane Kane</button>
+            </div>
+        </div>
+        <div class="pageBody" id="addPage">
+        
+            <h2>Add Contact</h2>
+            <div class="inputColl" id="contactsInputs">
+                <form>
+                    <label for="name">Name</label>
+                    <input id="name" placeholder="Jane Doe">
+                </form>
+                <form>
+                    <label for="number">Number</label>
+                    <input id="number" placeholder="123-456-7890">
+                </form>
+                <form>
+                    <label for="email">E-Mail Address</label>
+                    <input id="email" placeholder="urmom@pwnd.com">
+                </form>
+                <button class="addButton" id="addButt">Add Contact</button>
+                <button class="addButton" id="clearButt">Clear</button>
+            </div>
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="phone.js"></script>
+    </body>
+</html>
