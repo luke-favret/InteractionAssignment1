@@ -1,8 +1,6 @@
-## Welcome to GitHub Pages
 
-You can use the [editor on GitHub](https://github.com/luke-favret/InteractionAssignment1/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+My power went out and since I do all my coding on my desktop I can't upload it. I'll skip one of my classes and try and have it done on my laptop before class starts but I have another class I have to leave for right now, power has been out for awhile
 
 ### Markdown
 
