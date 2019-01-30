@@ -1,6 +1,6 @@
 $(document).ready(function () { // do this when the document is loaded
     "use strict";
-	$("#dialerPage").show(); // show the element with ID "element"
+	#dialerPage.style.display = 'none';  //$("#dialerPage").show(); // show the element with ID "element"
 	$("#contactPage").hide(); // hide the element with ID "otherElement"
     $("#addPage").hide();
 });
