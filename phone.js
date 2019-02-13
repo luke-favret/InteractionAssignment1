@@ -22,3 +22,12 @@ $("#addTab").click(function () { // when "button_id" is clicked
 	$("#dialerPage").hide();	// hide other element
     $("#contactPage").hide();
 });
+
+/* fancy dialing functions */
+$(".padNum").click(function () {
+	$("#dialInput").val($("#dialInput").val() + this.innerText);
+});
+
+$("#padClear").click(function () {
+	$("#dialInput").val("");
+});
