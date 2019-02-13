@@ -1,21 +1,7 @@
-body { font-family: sans-serif; margin: 0px;}
-button { width: 80px; height: 40px; background: #A9A9A9; color: white;  border: 0px; margin: 0px; vertical-align: middle;}
-
-
-.tabChange{width: 110px; height: 30px; margin: 0px; margin-left: -0px; background: #717b8c; padding: 0; }
+button { width: 80px; height: 40px; background: #A9A9A9; color: white; margin: 12px; border: 0px;}
+.padNum { max-width: 33.33333%; max-height: 20%; background: #A9A9A9; color: white; margin: 0.5px; /*margin-left: 1px; margin-top: 2px; margin-bottom: 2px;*/ border: 1px solid black;}/* outline-color: black; outline-width: 1px; outline-style: double;*/ 
+.contacts { width: 300px; height: 800px;}
+.keypad {/*width: 200px; height: 240px; /*background: #D3D3D3;*/ max-width: 30%; max-height: 100%; border: 1px solid black;} 
+.tabChange{width: 90px; height: 30px; margin: 0px; margin-left: 10px; }
 .pageBody {margin-left: 10px; }
-
-.padNum { width: 135px; height: 50px; background: #c3ccdb; color: white; margin-top: 8px; margin-right: 8px;  border: 0px solid black; vertical-align: middle }
-.keypad { max-width: 500px; max-height: 835px; border: 0px solid black; display: inline-block;} 
-#controlPad { width: .keypad.width; max-height: 50px; display: flex; justify-content: center; }
-.padControl { width: 210px; height: 50px; background: #aab2bf; margin-right: 10px; margin-top: 10px;}
-
-#dialInput { width: 430px; height: 40px; text-align: right; font-size: 24px;}
-
-
-.contacts { max-width: 500px; max-height: 800px; display: block; padding: 0;}
-.padContact { width: 135px; height: 50px; background: #c3ccdb; margin-right: 10px; margin-top: 10px; vertical-align: middle;}
-
-.addButton { width: 120px; height: 40px; background: #aab2bf; margin-right: 10px; margin-top: 8px; vertical-align: middle;}
-
-#helpContent {max-width: 430px;}
+#dialNumber {width: 250px; height: 40px; }

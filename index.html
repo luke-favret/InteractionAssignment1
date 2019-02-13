@@ -1,120 +1,74 @@
-<html lang="en" >
+<html>
     <head>
         <link rel="stylesheet" href="phone.css">
         <title> This is a title</title>
     </head>
     <body>
-        <div id="tabHeader" role="navigation">
-            <button class="tabChange" id="dialTab" accesskey="q">Dialer</button><!--
-            --><button class="tabChange" id="contactTab" accesskey="c">Contact List</button><!--
-            --><button class="tabChange" id="addTab" accesskey="a">Add Contact</button><!--
-            --><button class="tabChange" id="helpTab" accesskey="h">Help</button>
+        <div class="tabHeader" id="page1">
+            <button class="tabChange" id="dialTab">Dialer</button>
+            <button class="tabChange" id="contactTab">Contact List</button>
+            <button class="tabChange" id="addTab">Add Contact</button>
         </div>
-        <div aria-live="polite">
-            <div class="pageBody" id="dialerPage" role="main">
-
-                <h2>Dialer</h2>
-                <div aria-live="polite">
-                    <form>
-                        <!--<label for="name">Name</label>-->
-                        <input id="dialInput" placeholder=" " >
-                    </form>
-                </div>
-                <div class="keypad" id="dialerKeypad">
-                    <div>
-                        <button class="padNum" id="padOne" accesskey="1">1</button>
-                        <button class="padNum" id="padTwo" accesskey="2">2</button>
-                        <button class="padNum" id="padThree" accesskey="3">3</button>
-                    </div>
-                    <!--<br>-->
-                    <div>
-                        <button class="padNum" id="padFour" accesskey="4">4</button>
-                        <button class="padNum" id="padFive" accesskey="5">5</button>
-                        <button class="padNum" id="padSix" accesskey="6">6</button>
-                    </div>
-                    <!--<br>-->
-                    <div>
-                        <button class="padNum" id="padSeven" accesskey="7">7</button>
-                        <button class="padNum" id="padEight" accesskey="8">8</button>
-                        <button class="padNum" id="padNine" accesskey="9">9</button>
-                    </div>
-                    <!--<br>-->
-                    <div>
-                        <button class="padNum" id="padStar" accesskey="*">*</button>
-                        <button class="padNum" id="padZero" accesskey="0">0</button>
-                        <button class="padNum" id="padPound" accesskey="#">#</button>
-                    </div>
-                    <div id=controlPad>
-                        <button class="padControl" id="padDial" >Dial</button>
-                        <button class="padControl" id="padClear" accesskey="z">Clear</button>
-                    </div>
-                </div>
-
-
+        <div class="pageBody" id="dialerPage">
+        
+            <h2>Dialer</h2>
+            <form>
+                <!--<label for="name">Name</label>-->
+                <input id="dialNumber" placeholder="Dialer Input">
+            </form>
+            <div class="keypad" id="dialerKeypad">
+                <button class="padNum" id="padOne">1</button>
+                <button class="padNum" id="padTwo">2</button>
+                <button class="padNum" id="padThree">3</button>
+                <!--<br>-->
+                <button class="padNum" id="padFour">4</button>
+                <button class="padNum" id="padFive">5</button>
+                <button class="padNum" id="padSix">6</button>
+                <!--<br>-->
+                <button class="padNum" id="padSeven">7</button>
+                <button class="padNum" id="padEight">8</button>
+                <button class="padNum" id="padNine">9</button>
+                <!--<br>-->
+                <button class="padNum" id="padStar">*</button>
+                <button class="padNum" id="padZero">0</button>
+                <button class="padNum" id="padPound">#</button>
             </div>
-            <div class="pageBody" id="contactPage" role="main">
-
-                <h2>Contact List</h2>
-                <div class="contacts" id="contactPad">
-                    <table>
-                        <tr>
-                            <th><button class="padContact" id="contactOne">Shaun Kane</button></th>
-                            <th><button class="padContact" id="contactTwo">Shaun King</button></th>
-                            <th><button class="padContact" id="contactThree">Shaun Kong</button></th> 
-                        </tr>
-                        <tr>  
-                            <th><button class="padContact" id="contactFour">Shaun Kang</button></th>
-                            <th><button class="padContact" id="contactFive">Shaun Shaun PoShaun</button></th>
-                            <th><button class="padContact" id="contactSix">Shaun Kerry</button></th>
-                        </tr> 
-                        <tr>
-                            <th><button class="padContact" id="contactSeven">Shane Kane</button></th>
-                        </tr>
-                    </table>
-                </div>
+            <button class="genButt" id="padDial">Dial</button>
+            <button class="genButt" id="padClear">Clear</button>
+            
+        </div>
+        <div class="pageBody" id="contactPage">
+        
+            <h2>Contact List</h2>
+            <div class="contacts" id="contactPad">
+                <button class="padContact" id="contactOne">Shaun Kane</button>
+                <button class="padContact" id="contactTwo">Shaun King</button>
+                <button class="padContact" id="contactThree">Shaun Kong</button>
+                
+                <button class="padContact" id="contactFour">Shaun Kang</button>
+                <button class="padContact" id="contactFive">Shaun Shaun PoShaun</button>
+                <button class="padContact" id="contactSix">Shaun Kerry</button>
+                <button class="padContact" id="contactSeven">Shane Kane</button>
             </div>
-            <div class="pageBody" id="addPage" role="main">
-
-                <h2>Add Contact</h2>
-                <div class="inputColl" id="contactsInputs">
-                    <form>
-                        <label for="name" >Name</label>
-                        <input id="name" placeholder="Jane Doe" aria-required="true">
-                    </form>
-                    <form>
-                        <label for="number">Number</label>
-                        <input id="number" placeholder="123-456-7890" aria-required="true">
-                    </form>
-                    <form>
-                        <label for="email">E-Mail Address</label>
-                        <input id="email" placeholder="jdoe@email.com">
-                    </form>
-                    <div>
-                        <button class="addButton" id="addButt">Add Contact</button>
-                        <button class="addButton" id="clearButt">Clear</button>
-                    </div>
-                </div>
-            </div>
-            <div class="pageBody" id="helpPage" role="main">
-                <div id="helpContent">
-                    <h2>Help</h2>
-                    <h3>Tab Navigation</h3>
-                    <p>As the order of elements in the page follows a linear procedure, the page can be easily navigated using the tab button.</p>
-                    <h3> Access Keys</h3>
-                    <p>Access keys have been added for every tab: Q for Dialer, C for Contact List, A for Add Contact, and H for Help. Access keys have also been added for each of the numbers on the dialer, with each key matching the number. Z is the access key for clear. It should be noted that the WAVE tool suggests against the use of access keys.</p>
-
-                    <h3>Aria Landmarks</h3>
-                    <p>Aria tags ahve been added to the site. The ARIA tags define the header as navigation, and each page body as main. They also state the name and number are required for the add contact page.</p>
-                    <h3>Aria Live</h3>
-                    <p>The entire page body that the tabs rest in has been wrapped in a div with a polite aria live tag.</p>
-                    <h3>Tables</h3>
-                    <p>The contacts page has been updated so that each button is a table header. There are 3 buttons per row. More will be added to the table as the functionality of the site is expanded upon.</p>
-                    <h3>Image</h3>
-                    <p>
-                    <img src="https://instagram.fapa1-1.fna.fbcdn.net/vp/7464b48342482a158978c7ce6cd64149/5CDCC536/t51.2885-15/e35/13402587_1177988368889789_709353274_n.jpg?_nc_ht=instagram.fapa1-1.fna.fbcdn.net"; width="100%"; alt="Raindrop Sunset"; longdesc="Image of a sunset with a very orange background and large raindrops which are very close to the lens and take up the bottom third of the image. It is the product of macro photography and employs illusions/visual distortions. ";>
-                    Source: Taken by me, posted on my instagram.
-                    </p>
-                </div>
+        </div>
+        <div class="pageBody" id="addPage">
+        
+            <h2>Add Contact</h2>
+            <div class="inputColl" id="contactsInputs">
+                <form>
+                    <label for="name">Name</label>
+                    <input id="name" placeholder="Jane Doe">
+                </form>
+                <form>
+                    <label for="number">Number</label>
+                    <input id="number" placeholder="123-456-7890">
+                </form>
+                <form>
+                    <label for="email">E-Mail Address</label>
+                    <input id="email" placeholder="urmom@pwnd.com">
+                </form>
+                <button class="addButton" id="addButt">Add Contact</button>
+                <button class="addButton" id="clearButt">Clear</button>
             </div>
         </div>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
